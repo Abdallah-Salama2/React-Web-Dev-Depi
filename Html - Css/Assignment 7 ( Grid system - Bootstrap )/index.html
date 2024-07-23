@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="">
+    <header class="container-fluid">
+      <nav
+        class="navbar navbar-expand-lg row navbar-dark bg-black justify-content-between text-white fixed-top z-1"
+      >
+        <div class="col-2">
+          <a class="mt-2" title="Simone" style="cursor: pointer">
+            <img src="images/logo-light.png" alt="Simone" />
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler col-2 ms-auto w-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="col-2 d-flex justify-content-end align-items-center order-lg-2 order-1"
+        >
+          <!-- We used order so opening togglebar doesnt take full width  -->
+          <ul
+            class="d-flex align-items-center mb-0 mt-2"
+            style="font-size: 17px"
+          >
+            <li class="px-2">
+              <a class="text-white" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="px-2">
+              <a class="text-white" href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="px-2">
+              <a class="text-white" href="#"><i class="fab fa-dribbble"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="collapse navbar-collapse col-lg-8 justify-content-center pe-0 order-lg-1 order-2"
+          id="navbarNav"
+        >
+          <!-- NavBar Collaps contain have flex style that why u can use  justify-content-center and display flex can cause an errror -->
+          <ul
+            class="navbar-nav gap-3 text-white mt-2 bg-black"
+            style="font-size: 17px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" style="cursor: pointer" href="#Home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer" href="#About"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer" href="#What I Do?"
+                >What I Do</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer" href="#Resume"
+                >Resume</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer" href="#Portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer" href="#Testimonial"
+                >Client</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer" href="#Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="Home" class="home">
+      <div
+        class="h-100 bg-black bg-opacity-75 text-white text-center d-flex flex-column gap-2 justify-content-center"
+      >
+        <p class="poppins-medium text-light" style="font-size: 28px">Welcome</p>
+        <h1 class="home-title"></h1>
+        <p style="font-size: 21px" class="text-light">
+          based in Los Angeles, California
+        </p>
+        <a
+          href="#Contact"
+          class="btn btn-outline-primary rounded-pill shadow-none mt-2 px-5 py-3 align-self-center"
+          style="color: var(--mainColor); border: 3px solid var(--mainColor)"
+          >Hire Me</a
+        >
+        <a
+          href="#About"
+          class="text-white justify-self-end position-absolute bottom-0 align-self-center"
+          ><span class=""><i class="fa fa-chevron-down"></i></span
+        ></a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="About" class="about bg-white">
+      <div class="container">
+        <div class="position-relative text-center" style="line-height: 172px">
+          <h1 class="text-uppercase section-title">About Me</h1>
+          <p class="position-absolute poppins-semibold w-100 section-title-top">
+            Know Me More
+          </p>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-8 text-sm-center text-md-start">
+            <div>
+              <h2>I'm <span>Simone Olivia</span>, a Web Developer</h2>
+              <p>
+                I help you build brand for your business at an affordable price.
+                Thousands of clients have procured exceptional results while
+                working with our dedicated team. when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book.
+              </p>
+              <p>
+                Delivering work within time and budget which meets client’s
+                requirements is our moto. Lorem Ipsum has been the industry's
+                standard dummy text ever when an unknown printer took a galley.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div>
+              <ul class="p-0">
+                <li><span class="me-2">Name:</span>Simone Olivia</li>
+                <li>
+                  <span class="me-2">Email:</span
+                  ><a class="">chat@simone.com</a>
+                </li>
+                <li><span class="me-2">Age:</span>28</li>
+                <li class="border border-0">
+                  <span class="me-2">From:</span>Los Angeles, California
+                </li>
+              </ul>
+
+              <a
+                href="#contact"
+                class="border-0 btn btn-outline-primary rounded-pill mt-2 px-5 py-3 ms-5 align-self-center"
+                style="
+                  background-color: var(--mainColor);
+                  color: white;
+                  border: 3px solid var(--mainColor);
+                "
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row features mt-5" style="color: rgb(108, 117, 125)">
+          <div class="col-6 col-md-3 poppins-medium">
+            <div class="border-end text-center">
+              <h3>10+</h3>
+              <p>Years Experiance</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 poppins-medium">
+            <div class="border-end text-center">
+              <h3>250+</h3>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 poppins-medium">
+            <div class="border-end text-center">
+              <h3>650+</h3>
+              <p>Projects Done</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 poppins-medium">
+            <div class="border-end text-center">
+              <h3>38</h3>
+              <p>Get Awards</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- What I do Section -->
+    <section
+      id="What I Do?"
+      class="what-i-do"
+      style="background-color: #f8f9fa"
+    >
+      <div class="container">
+        <div class="row gap-5">
+          <div class="position-relative text-center">
+            <h1 class="section-title text-uppercase">Services</h1>
+            <p
+              class="position-absolute poppins-semibold w-100 section-title-top"
+            >
+              What I Do?
+            </p>
+          </div>
+          <div class="col-lg-11 mx-auto">
+            <div class="row gy-5">
+              <div class="col-md-6">
+                <div class="service style-3 mb-5">
+                  <div
+                    class="services-icon align-self-baseline text-primary shadow-sm rounded bg-white"
+                  >
+                    <i
+                      class="fas fa-palette"
+                      style="font-size: 30px; color: var(--mainColor)"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3 class="">Graphic Design</h3>
+                    <p class="mb-0">
+                      Lisque persius interesset his et, in quot quidam
+                      persequeris vim, ad mea essent possim iriure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="service style-3 mb-5">
+                  <div
+                    class="services-icon text-primary shadow-sm rounded bg-white"
+                  >
+                    <i
+                      class="fas fa-desktop"
+                      style="font-size: 30px; color: var(--mainColor)"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3 class="">Web Design</h3>
+                    <p class="mb-0">
+                      Lisque persius interesset his et, in quot quidam
+                      persequeris vim, ad mea essent possim iriure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="service style-3 mb-5">
+                  <div
+                    class="services-icon text-primary shadow-sm rounded bg-white"
+                  >
+                    <i
+                      class="fas fa-pencil-ruler"
+                      style="font-size: 30px; color: var(--mainColor)"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3 class="">UI/UX Design</h3>
+                    <p class="mb-0">
+                      Lisque persius interesset his et, in quot quidam
+                      persequeris vim, ad mea essent possim iriure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="service style-3 mb-5">
+                  <div
+                    class="services-icon text-primary shadow-sm rounded bg-white"
+                  >
+                    <i
+                      class="fas fa-paint-brush"
+                      style="font-size: 30px; color: var(--mainColor)"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3 class="">App Design &amp; Develop</h3>
+                    <p class="mb-0">
+                      Lisque persius interesset his et, in quot quidam
+                      persequeris vim, ad mea essent possim iriure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="service style-3 mb-5">
+                  <div
+                    class="services-icon text-primary shadow-sm rounded bg-white"
+                  >
+                    <i
+                      class="fas fa-chart-area"
+                      style="font-size: 30px; color: var(--mainColor)"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3 class="">Business Analysis</h3>
+                    <p class="mb-0">
+                      Lisque persius interesset his et, in quot quidam
+                      persequeris vim, ad mea essent possim iriure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="service style-3 mb-5">
+                  <div
+                    class="services-icon text-primary shadow-sm rounded bg-white"
+                  >
+                    <i
+                      class="fas fa-bullhorn"
+                      style="font-size: 30px; color: var(--mainColor)"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3 class="">SEO Marketing</h3>
+                    <p class="mb-0">
+                      Lisque persius interesset his et, in quot quidam
+                      persequeris vim, ad mea essent possim iriure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of What I do Section -->
+
+    <!-- Resume  Section -->
+    <section id="Resume" class="resume">
+      <div class="container">
+        <div class="position-relative text-center">
+          <h1 class="section-title text-uppercase">Summary</h1>
+          <p class="position-absolute poppins-semibold w-100 section-title-top">
+            Resume
+          </p>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <div><h2 class="poppins-semibold mb-4">My Education</h2></div>
+            <div class="bg-white rounded p-4 mb-4 bg-white border me-4">
+              <span class="px-2 py-1 rounded-2">2000-2004</span>
+              <div class="mt-3 mb-2">
+                <h3 class="poppins-medium">Computer Science</h3>
+              </div>
+              <div><p class="text-danger">International University</p></div>
+              <div>
+                <p class="mb-0" style="color: var(--paragraph-color)">
+                  Lisque persius interesset his et, in quot quidam persequeris
+                  vim, ad mea essent possim iriure.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded p-4 mb-4 bg-white border me-4">
+              <span class="px-2 py-1 rounded-2">2000-2004</span>
+              <div class="mt-3 mb-2">
+                <h3 class="poppins-medium">Computer Science</h3>
+              </div>
+              <div><p class="text-danger">International University</p></div>
+              <div>
+                <p class="mb-0" style="color: var(--paragraph-color)">
+                  Lisque persius interesset his et, in quot quidam persequeris
+                  vim, ad mea essent possim iriure.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded p-4 mb-4 bg-white border me-4">
+              <span class="px-2 py-1 rounded-2">2000-2004</span>
+              <div class="mt-3 mb-2">
+                <h3 class="poppins-medium">Computer Science</h3>
+              </div>
+              <div><p class="text-danger">International University</p></div>
+              <div>
+                <p class="mb-0" style="color: var(--paragraph-color)">
+                  Lisque persius interesset his et, in quot quidam persequeris
+                  vim, ad mea essent possim iriure.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div><h2 class="poppins-semibold mb-4">My Experience</h2></div>
+            <div class="bg-white rounded p-4 mb-4 bg-white border me-4">
+              <span class="px-2 py-1 rounded-2">2000-2004</span>
+              <div class="mt-3 mb-2">
+                <h3 class="poppins-medium">Computer Science</h3>
+              </div>
+              <div><p class="text-danger">International University</p></div>
+              <div>
+                <p class="mb-0" style="color: var(--paragraph-color)">
+                  Lisque persius interesset his et, in quot quidam persequeris
+                  vim, ad mea essent possim iriure.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded p-4 mb-4 bg-white border me-4">
+              <span class="px-2 py-1 rounded-2">2000-2004</span>
+              <div class="mt-3 mb-2">
+                <h3 class="poppins-medium">Computer Science</h3>
+              </div>
+              <div><p class="text-danger">International University</p></div>
+              <div>
+                <p class="mb-0" style="color: var(--paragraph-color)">
+                  Lisque persius interesset his et, in quot quidam persequeris
+                  vim, ad mea essent possim iriure.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded p-4 mb-4 bg-white border me-4">
+              <span class="px-2 py-1 rounded-2">2000-2004</span>
+              <div class="mt-3 mb-2">
+                <h3 class="poppins-medium">Computer Science</h3>
+              </div>
+              <div><p class="text-danger">International University</p></div>
+              <div>
+                <p class="mb-0" style="color: var(--paragraph-color)">
+                  Lisque persius interesset his et, in quot quidam persequeris
+                  vim, ad mea essent possim iriure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="poppins-semibold mb-4 mt-4">My Skills</h2>
+        <div class="row gx-5">
+          <div class="col-md-6">
+            <div class="d-flex justify-content-between">
+              <p class="mb-2">Web Design</p>
+              <span class="bg-transparent text-dark poppins-semibold">65%</span>
+            </div>
+            <div class="progress progress-sm mb-4">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="65"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 65%"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="fw-500 text-start mb-2 text-dark">
+              HTML/CSS
+              <span class="float-end bg-transparent text-dark poppins-semibold"
+                >95%</span
+              >
+            </p>
+            <div class="progress progress-sm mb-4">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 95%"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="fw-500 text-start mb-2 text-dark">
+              JavaScript
+              <span class="float-end bg-transparent text-dark poppins-semibold"
+                >80%</span
+              >
+            </p>
+            <div class="progress progress-sm mb-4">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="fw-500 text-start mb-2 text-dark">
+              React JS
+              <span class="float-end bg-transparent text-dark poppins-semibold"
+                >70%</span
+              >
+            </p>
+            <div class="progress progress-sm mb-4">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 70%"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="fw-500 text-start mb-2 text-dark">
+              Angular Js
+              <span class="float-end bg-transparent text-dark poppins-semibold"
+                >60%</span
+              >
+            </p>
+            <div class="progress progress-sm mb-4">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 60%"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="fw-500 text-start mb-2 text-dark">
+              Bootstrap
+              <span class="float-end bg-transparent text-dark poppins-semibold"
+                >99%</span
+              >
+            </p>
+            <div class="progress progress-sm mb-4">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="99"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 99%"
+              ></div>
+            </div>
+          </div>
+          <a
+            href="#contact"
+            class="btn btn-outline-primary rounded-pill shadow-none mt-4 py-3 mx-auto"
+            style="
+              color: rgb(108, 117, 125);
+              border: 3px solid rgb(108, 117, 125);
+              width: 220px;
+            "
+            >Download CV
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End of Resume Section -->
+
+    <!-- My Work  Section -->
+    <section id="Portfolio" class="portfolio" style="background-color: #f8f9fa">
+      <div class="container">
+        <div class="position-relative text-center">
+          <h1 class="section-title text-uppercase">Portfolio</h1>
+          <p class="position-absolute poppins-semibold w-100 section-title-top">
+            My Work
+          </p>
+        </div>
+        <div class="row mt-5 gx-4 gy-sm-4">
+          <div class="col-md-4">
+            <div class="d-flex flex-column gap-4">
+              <div class="position-relative portfolio-image">
+                <!-- <div class="bg-black"></div> -->
+                <img class="" src="images/project-1.jpg" />
+                <div
+                  class="position-absolute start-50 top-50 translate-middle text-white text-center opacity-0 portfolio-content w-100 h-100 d-flex flex-column justify-content-center"
+                  style="background-color: rgba(0, 0, 0, 0.5)"
+                >
+                  <h4 class="poppins-medium">Project</h4>
+                  <p class="text-white">Category</p>
+                </div>
+              </div>
+
+              <div class="position-relative portfolio-image">
+                <img src="images/project-4.jpg" />
+                <div
+                  class="position-absolute start-50 top-50 translate-middle text-white text-center opacity-0 portfolio-content w-100 h-100 d-flex flex-column justify-content-center"
+                  style="background-color: rgba(0, 0, 0, 0.5)"
+                >
+                  <h4 class="poppins-medium">Project</h4>
+                  <p class="text-white">Category</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="d-flex flex-column gap-4">
+              <div class="position-relative portfolio-image">
+                <img src="images/project-2.jpg" />
+                <div
+                  class="position-absolute start-50 top-50 translate-middle text-white text-center opacity-0 portfolio-content w-100 h-100 d-flex flex-column justify-content-center"
+                  style="background-color: rgba(0, 0, 0, 0.5)"
+                >
+                  <h4 class="poppins-medium">Project</h4>
+                  <p class="text-white">Category</p>
+                </div>
+              </div>
+
+              <div class="position-relative portfolio-image">
+                <img src="images/project-7.jpg" />
+                <div
+                  class="position-absolute start-50 top-50 translate-middle text-white text-center opacity-0 portfolio-content w-100 h-100 d-flex flex-column justify-content-center"
+                  style="background-color: rgba(0, 0, 0, 0.5)"
+                >
+                  <h4 class="poppins-medium">Project</h4>
+                  <p class="text-white">Category</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="d-flex flex-column gap-4">
+              <div class="position-relative portfolio-image">
+                <img src="images/project-3.jpg" />
+                <div
+                  class="position-absolute start-50 top-50 translate-middle text-white text-center opacity-0 portfolio-content w-100 h-100 d-flex flex-column justify-content-center"
+                  style="background-color: rgba(0, 0, 0, 0.5)"
+                >
+                  <h4 class="poppins-medium">Project</h4>
+                  <p class="text-white">Category</p>
+                </div>
+              </div>
+
+              <div class="position-relative portfolio-image">
+                <img src="images/project-5.jpg" />
+                <div
+                  class="position-absolute start-50 top-50 translate-middle text-white text-center opacity-0 portfolio-content w-100 h-100 d-flex flex-column justify-content-center"
+                  style="background-color: rgba(0, 0, 0, 0.5)"
+                >
+                  <h4 class="poppins-medium">Project</h4>
+                  <p class="text-white">Category</p>
+                </div>
+              </div>
+
+              <div class="position-relative portfolio-image">
+                <img src="images/project-6.jpg" />
+                <div
+                  class="position-absolute start-50 top-50 translate-middle text-white text-center opacity-0 portfolio-content w-100 h-100 d-flex flex-column justify-content-center"
+                  style="background-color: rgba(0, 0, 0, 0.5)"
+                >
+                  <h4 class="poppins-medium">Project</h4>
+                  <p class="text-white">Category</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="card-columns">
+          <div class="card">
+            <img src="images/project-1.jpg" />
+          </div>
+          <div class="card">
+            <img src="images/project-4.jpg" />
+          </div>
+          <div class="card">
+            <img src="images/project-2.jpg" />
+          </div>
+          <div class="card">
+            <img src="images/project-7.jpg" />
+          </div>
+          <div class="card">
+            <img src="images/project-3.jpg" />
+          </div>
+          <div class="card">
+            <img src="images/project-5.jpg" />
+          </div>
+          <div class="card">
+            <img src="images/project-6.jpg" />
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- End of My Work Section -->
+
+    <!-- Testimonial  Section -->
+    <section id="Testimonial" class="testimonial">
+      <div class="container">
+        <div class="position-relative text-center">
+          <h1 class="section-title text-uppercase">Testimonial</h1>
+          <p
+            class="position-absolute top poppins-semibold w-100 section-title-top"
+          >
+            Client Speak
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="bg-light p-4 rounded-3">
+              <div class="d-flex gap-3">
+                <img
+                  class="img-fluid rounded-circle border d-inline-block w-auto"
+                  src="images/client-sm-3.jpg"
+                  alt=""
+                />
+                <div>
+                  <h2
+                    class="poppins-semibold"
+                    style="line-height: 29px; font-size: 16px"
+                  >
+                    Dennis Jacques
+                  </h2>
+                  <span class="text-muted poppins-medium">User from USA</span>
+                </div>
+              </div>
+              <p class="mt-5 mb-4 text-dark">
+                “Only trying it out since a few days. But up to now excellent.
+                Seems to work flawlessly. priced simply dummy text of the
+                printing and typesetting industry.”
+              </p>
+              <span class=""
+                ><i class="fas fa-star text-warning"></i
+                ><i class="fas fa-star text-warning"></i
+                ><i class="fas fa-star text-warning"></i
+                ><i class="fas fa-star text-warning"></i
+                ><i class="fas fa-star text-warning"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="bg-light p-4 rounded-3">
+              <div class="d-flex gap-3">
+                <img
+                  class="img-fluid rounded-circle border d-inline-block w-auto"
+                  src="images/client-sm-3.jpg"
+                  alt=""
+                />
+                <div>
+                  <h2
+                    class="poppins-semibold"
+                    style="line-height: 29px; font-size: 16px"
+                  >
+                    Dennis Jacques
+                  </h2>
+                  <span class="text-muted poppins-medium">User from USA</span>
+                </div>
+              </div>
+              <p class="mt-5 mb-4 text-dark">
+                “Only trying it out since a few days. But up to now excellent.
+                Seems to work flawlessly. priced simply dummy text of the
+                printing and typesetting industry.”
+              </p>
+              <span class=""
+                ><i class="fas fa-star text-warning"></i
+                ><i class="fas fa-star text-warning"></i
+                ><i class="fas fa-star text-warning"></i
+                ><i class="fas fa-star text-warning"></i
+                ><i class="fas fa-star text-warning"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Testimonial Section -->
+
+    <!-- Contact  Section -->
+    <section id="Contact" class="contact" style="background-color: #f8f9fa">
+      <div class="container">
+        <div class="position-relative text-center">
+          <h1 class="section-title text-uppercase">Contact</h1>
+          <p class="position-absolute poppins-semibold w-100 section-title-top">
+            Get in Touch
+          </p>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-3 d-flex flex-column">
+            <div>
+              <h2 class="mb-2 mt-4 fs-5 text-uppercase">Address</h2>
+              <p class="mb-4">
+                4th Floor, Plot No.22,<br />145 Murphy Canyon Rd.<br />San Diego
+                CA 2028
+              </p>
+              <p class="mb-1">
+                <span class="me-2"
+                  ><i
+                    class="fas fa-phone"
+                    style="color: var(--mainColor)"
+                  ></i></span
+                >(060) 444 434 444
+              </p>
+              <p class="mb-1">
+                <span class="me-2"
+                  ><i
+                    class="fas fa-fax"
+                    style="color: var(--mainColor)"
+                  ></i></span
+                >(060) 555 545 555
+              </p>
+              <p class="mb-1">
+                <span class="me-2"
+                  ><i
+                    class="fas fa-envelope"
+                    style="color: var(--mainColor)"
+                  ></i></span
+                >chat@simone.com
+              </p>
+              <h2 class="mb-3 mt-4 fs-5 text-uppercase">Follow Me</h2>
+            </div>
+            <div>
+              <ul
+                class="d-flex align-items-center mb-0 p-0"
+                style="font-size: 17px; color: var(--paragraph-color)"
+              >
+                <li class="pe-2">
+                  <a class="text-black" href="#"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="px-2">
+                  <a class="text-black" href="#"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="px-2">
+                  <a class="text-black" href="#"
+                    ><i class="fab fa-dribbble"></i
+                  ></a>
+                </li>
+                <li class="px-2">
+                  <a class="text-black" href="#"
+                    ><i class="fab fa-google"></i
+                  ></a>
+                </li>
+                <li class="px-2">
+                  <a class="text-black" href="#"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <h2 class="mb-2 mt-4 fs-5 text-uppercase">Send Us A Note</h2>
+            <form class="container-fluid p-0">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <input
+                    name="user_name"
+                    type="text"
+                    class="form-control"
+                    required=""
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    name="email"
+                    type="email"
+                    class="form-control text-muted"
+                    required=""
+                    placeholder="Email"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    class="form-control text-muted"
+                    rows="5"
+                    required=""
+                    placeholder="Tell us more about your needs........"
+                  ></textarea>
+                </div>
+              </div>
+              <p class="text-center mt-4 mb-0">
+                <a
+                  href="#contact"
+                  class="btn border-0 btn-outline-primary rounded-pill shadow-none smooth-scroll mt-2 px-5 py-3 align-self-center"
+                  style="
+                    color: white;
+                    background-color: var(--mainColor);
+                    border: 3px solid var(--mainColor);
+                  "
+                  >Send Message</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact Section -->
+
+    <!-- Footer  Section -->
+    <footer id="Footer" class="footer">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-lg-6 text-center text-lg-start">
+            <p class="mb-3 mb-lg-0">
+              Copyright © 2023
+              <a
+                href="#home"
+                class="text-decoration-none"
+                style="color: var(--mainColor)"
+                >Simone</a
+              >. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <ul
+              class="d-flex gap-4 justify-content-center justify-content-md-end p-0"
+            >
+              <li>
+                <a class="text-decoration-none" href="#terms-policy"
+                  >Terms &amp; Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration-none text-sm-center text-md-start"
+                  href="#disclaimer"
+                  >Disclaimer</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer Section -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script>
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      function removeActiveClassFromAllElements() {
+        navLinks.forEach((navLink) => {
+          navLink.classList.remove("active");
+        });
+      }
+      navLinks.forEach((navLink) => {
+        //onclick fire function
+        navLink.addEventListener("click", () => {
+          removeActiveClassFromAllElements();
+          navLink.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

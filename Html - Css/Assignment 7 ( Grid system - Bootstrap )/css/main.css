@@ -1,0 +1,704 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth !important;
+  /* -webkit-scroll-behavior: auto !important; */
+}
+:root {
+  --mainColor: rgb(32, 201, 151);
+  --transparentColor: rgba(222, 227, 228, 0.4);
+  --black-color: rgb(33, 37, 41);
+  --paragraph-color: rgb(76, 77, 77);
+}
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* border: 1px solid; */
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+/*Nav Bar */
+nav li {
+  list-style: none;
+}
+
+.navbar-nav a {
+  color: white;
+}
+.navbar-nav a:hover {
+  color: var(--mainColor);
+}
+.active {
+  color: var(--mainColor) !important;
+}
+/* End of Nav Bar */
+
+/* start of Home Section*/
+.home {
+  background-image: url("../images/intro-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  height: 100vh;
+  /* Full viewport height */
+}
+.home-title {
+  font-size: 64px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.home-title::before {
+  content: "";
+  animation: writing-animation 10s infinite;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.btn {
+  transition: 0.5s;
+}
+.home .btn:hover {
+  background-color: var(--mainColor);
+  color: aliceblue !important;
+}
+
+section {
+  padding: 72px 0 72px 0;
+}
+.heading {
+  position: relative;
+  border: 1px solid;
+}
+.section-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 132px;
+  color: var(--transparentColor);
+}
+.section-title-top {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
+  /* line-height: 172px !important; */
+  color: var(--black-color);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-title-top::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  top: 160%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-color: var(--mainColor);
+  border-width: 3px 0px 0px 0;
+}
+@media (min-width: 0) and (max-width: 900px) {
+  .section-title {
+    font-size: 1rem;
+  }
+}
+
+/* End of Home Section*/
+
+/* Start of About Section*/
+
+.about h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 34px;
+  color: rgb(37, 43, 51);
+}
+.about h2 span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--mainColor);
+}
+
+p {
+  line-height: 29px;
+  color: var(--paragraph-color);
+}
+.about li {
+  list-style: none;
+  padding: 12px 0;
+  border-bottom: 1px solid gainsboro;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--paragraph-color);
+}
+.about span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--paragraph-color);
+}
+.about .btn:hover {
+  background-color: #1baa80 !important;
+  color: aliceblue !important;
+}
+
+.about .features h3 {
+  font-size: 48px;
+  line-height: 62px;
+  margin-bottom: 0px;
+}
+/* End of Home Section*/
+
+/* Start of Resume Section*/
+.resume span {
+  background-color: var(--mainColor);
+  color: white;
+  font-size: 14px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.service h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.services-icon {
+  padding: 20px;
+}
+.resume .btn:hover {
+  background-color: rgb(108, 117, 125) !important;
+  color: aliceblue !important;
+}
+
+.progress {
+  height: 8px;
+}
+.progress-bar {
+  background-color: var(--mainColor);
+}
+/* End of Home Section*/
+
+/* Porfolio Section */
+.portfolio img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.portfolio-content {
+  transition: 0.4s;
+}
+.portfolio-image:hover .portfolio-content {
+  opacity: 1 !important;
+  cursor: pointer;
+  border-radius: 8px;
+  /* transition: all 4s ease-in-out 1s; */
+  /* background-color: black; */
+}
+
+/* End of Portfolio */
+
+/* Start of Contact */
+.contact li {
+  list-style: none;
+}
+
+.contact .btn:hover {
+  background-color: #1baa80 !important;
+  color: aliceblue !important;
+}
+.form-control {
+  padding: 15px;
+}
+/* End of Contact */
+
+/* Start of Footer */
+.footer {
+  padding: 72px 0 60px 0;
+}
+
+.footer li {
+  list-style: none;
+}
+.footer a {
+  color: var(--paragraph-color);
+}
+.footer a:hover {
+  color: var(--mainColor);
+}
+/* End of Footer */
+
+/* Animation Part*/
+@keyframes writing-animation {
+  0% {
+    content: "";
+  }
+  0.69% {
+    content: "I";
+  }
+  1.38% {
+    content: "I'";
+  }
+  2.08% {
+    content: "I'm";
+  }
+  2.7% {
+    content: "I'm ";
+  }
+  3.47% {
+    content: "I'm S";
+  }
+  4.16% {
+    content: "I'm Si";
+  }
+  4.86% {
+    content: "I'm Sim";
+  }
+  5.5% {
+    content: "I'm Simo";
+  }
+  6.25% {
+    content: "I'm Simon";
+  }
+  6.94% {
+    content: "I'm Simone";
+  }
+  7.63% {
+    content: "I'm Simone ";
+  }
+  8.33% {
+    content: "I'm Simone O";
+  }
+  9.02% {
+    content: "I'm Simone Ol";
+  }
+  9.72% {
+    content: "I'm Simone Oli";
+  }
+  10.41% {
+    content: "I'm Simone Oliv";
+  }
+  11.1% {
+    content: "I'm Simone Olivi";
+  }
+  11.8% {
+    content: "I'm Simone Olivia";
+  }
+  12.5% {
+    content: "I'm Simone Olivia.";
+  }
+  13.19% {
+    content: "I'm Simone Olivia";
+  }
+  13.8% {
+    content: "I'm Simone Olivi";
+  }
+  14.58% {
+    content: "I'm Simone Oliv";
+  }
+  15.27% {
+    content: "I'm Simone Oli";
+  }
+  15.97% {
+    content: "I'm Simone Ol";
+  }
+  15.66% {
+    content: "I'm Simone O";
+  }
+  17.36% {
+    content: "I'm Simone ";
+  }
+  18.05% {
+    content: "I'm Simone";
+  }
+  18.75% {
+    content: "I'm Simon ";
+  }
+  19.44% {
+    content: "I'm Simo";
+  }
+  20.13% {
+    content: "I'm Sim";
+  }
+  20.83% {
+    content: "I'm Si";
+  }
+  21.52% {
+    content: "I'm S";
+  }
+  22.2% {
+    content: "I'm ";
+  }
+  22.91% {
+    content: "I'm";
+  }
+  23.61% {
+    content: "I'";
+  }
+  24.3% {
+    content: "I";
+  }
+  24.9% {
+    content: "";
+  }
+  25% {
+    content: "I";
+  }
+  25.69% {
+    content: "I";
+  }
+  26.38% {
+    content: "I'";
+  }
+  27.08% {
+    content: "I'm";
+  }
+  27.7% {
+    content: "I'm ";
+  }
+  28.47% {
+    content: "I'm a";
+  }
+  29.16% {
+    content: "I'm a ";
+  }
+  29.86% {
+    content: "I'm a F";
+  }
+  30.5% {
+    content: "I'm a Fr";
+  }
+  31.25% {
+    content: "I'm a Fre";
+  }
+  31.94% {
+    content: "I'm a Free";
+  }
+  32.63% {
+    content: "I'm a Freel";
+  }
+  33.33% {
+    content: "I'm a Freela";
+  }
+  34.02% {
+    content: "I'm a Freelan";
+  }
+  34.72% {
+    content: "I'm a Freelanc";
+  }
+  35.41% {
+    content: "I'm a Freelance";
+  }
+  36.1% {
+    content: "I'm a Freelancer";
+  }
+  36.8% {
+    content: "I'm a Freelancer.";
+  }
+  37.5% {
+    content: "I'm a Freelancer.";
+  }
+  38.19% {
+    content: "I'm a Freelancer";
+  }
+  38.8% {
+    content: "I'm a Freelance";
+  }
+  39.58% {
+    content: "I'm a Freelanc";
+  }
+  40.27% {
+    content: "I'm a Freelan";
+  }
+  40.97% {
+    content: "I'm a Freela";
+  }
+  41.66% {
+    content: "I'm a Freel";
+  }
+  42.36% {
+    content: "I'm a Free";
+  }
+  43.05% {
+    content: "I'm a Fre";
+  }
+  43.75% {
+    content: "I'm a Fr";
+  }
+  44.44% {
+    content: "I'm a F";
+  }
+  45.13% {
+    content: "I'm a ";
+  }
+  45.83% {
+    content: "I'm a";
+  }
+  46.52% {
+    content: "I'm ";
+  }
+  47.2% {
+    content: "I'm";
+  }
+  47.91% {
+    content: "I'";
+  }
+  48.61% {
+    content: "I";
+  }
+  49.3% {
+    content: "";
+  }
+  49.9% {
+    content: "";
+  }
+  50% {
+    content: "I";
+  }
+  50.69% {
+    content: "I";
+  }
+  51.38% {
+    content: "I'";
+  }
+  52.08% {
+    content: "I'm";
+  }
+  52.7% {
+    content: "I'm ";
+  }
+  53.47% {
+    content: "I'm a";
+  }
+  54.16% {
+    content: "I'm a ";
+  }
+  54.86% {
+    content: "I'm a P";
+  }
+  55.5% {
+    content: "I'm a Ph";
+  }
+  56.25% {
+    content: "I'm a Pho";
+  }
+  56.94% {
+    content: "I'm a Phot";
+  }
+  57.63% {
+    content: "I'm a Photo";
+  }
+  58.33% {
+    content: "I'm a Photog";
+  }
+  59.02% {
+    content: "I'm a Photogr";
+  }
+  59.72% {
+    content: "I'm a Photogra";
+  }
+  60.41% {
+    content: "I'm a Photograp";
+  }
+  61.1% {
+    content: "I'm a Photograph";
+  }
+  61.8% {
+    content: "I'm a Photographe";
+  }
+  62.5% {
+    content: "I'm a Photographer.";
+  }
+  63.19% {
+    content: "I'm a Photographer";
+  }
+  63.8% {
+    content: "I'm a Photographe";
+  }
+  64.58% {
+    content: "I'm a Photograph";
+  }
+  65.27% {
+    content: "I'm a Photograp";
+  }
+  65.97% {
+    content: "I'm a Photogra";
+  }
+  66.66% {
+    content: "I'm a Photogr";
+  }
+  67.36% {
+    content: "I'm a Photog";
+  }
+  68.05% {
+    content: "I'm a Photo";
+  }
+  68.75% {
+    content: "I'm a Phot";
+  }
+  69.44% {
+    content: "I'm a Pho";
+  }
+  70.13% {
+    content: "I'm a Ph";
+  }
+  70.83% {
+    content: "I'm a P";
+  }
+  71.52% {
+    content: "I'm a";
+  }
+  72.2% {
+    content: "I'm ";
+  }
+  72.91% {
+    content: "I'm";
+  }
+  73.61% {
+    content: "I'";
+  }
+  74.3% {
+    content: "I";
+  }
+  74.9% {
+    content: "";
+  }
+  75% {
+    content: "I";
+  }
+  75.69% {
+    content: "I";
+  }
+  76.38% {
+    content: "I'";
+  }
+  77.08% {
+    content: "I'm";
+  }
+  77.7% {
+    content: "I'm ";
+  }
+  78.47% {
+    content: "I'm a";
+  }
+  79.16% {
+    content: "I'm a ";
+  }
+  79.86% {
+    content: "I'm a D";
+  }
+  80.5% {
+    content: "I'm a De";
+  }
+  81.25% {
+    content: "I'm a Des";
+  }
+  81.94% {
+    content: "I'm a Desi";
+  }
+  82.63% {
+    content: "I'm a Desig";
+  }
+  83.33% {
+    content: "I'm a Design";
+  }
+  84.02% {
+    content: "I'm a Designe";
+  }
+  84.72% {
+    content: "I'm a Designer";
+  }
+  85.41% {
+    content: "I'm a Designer.";
+  }
+  86.1% {
+    content: "I'm a Designer.";
+  }
+  86.8% {
+    content: "I'm a Designer.";
+  }
+  87.5% {
+    content: "I'm a Designer.";
+  }
+  88.19% {
+    content: "I'm a Designer";
+  }
+  88.8% {
+    content: "I'm a Designe";
+  }
+  89.58% {
+    content: "I'm a Design";
+  }
+  90.27% {
+    content: "I'm a Desig";
+  }
+  90.97% {
+    content: "I'm a Desi";
+  }
+  91.66% {
+    content: "I'm a Des";
+  }
+  92.36% {
+    content: "I'm a De";
+  }
+  93.05% {
+    content: "I'm a D";
+  }
+  93.75% {
+    content: "I'm a ";
+  }
+  94.44% {
+    content: "I'm a";
+  }
+  95.13% {
+    content: "I'm ";
+  }
+  95.83% {
+    content: "I'm";
+  }
+  96.52% {
+    content: "I'";
+  }
+  97.2% {
+    content: "I";
+  }
+  97.91% {
+    content: "I";
+  }
+  98.61% {
+    content: "";
+  }
+  99.3% {
+    content: "";
+  }
+  100% {
+    content: "";
+  }
+}

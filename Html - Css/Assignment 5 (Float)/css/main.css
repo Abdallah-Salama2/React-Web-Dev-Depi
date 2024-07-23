@@ -1,0 +1,540 @@
+@font-face {
+    font-family: Nunito ;
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+    /* font-weight: 600; */
+    /* line-height: 24px; */
+
+}
+/*By setting margin and padding to 0 for all elements, you can add your own styles without worrying about the browser's defaults interfering.*/
+/*Explanation of box-sizing: border-box;
+By default, CSS uses the content-box box model, where the width and height of an element only include the content, not the padding or border.
+border-box includes the padding and border in the width and height, which often makes it easier to work with element sizes, especially in responsive design. 
+This model helps prevent elements from unexpectedly changing size due to padding or border changes.*/
+/* Without a CSS reset:
+
+A <div> might have some default padding and margin that you didn’t set.
+This makes the element larger than you expect and can push other elements around unexpectedly.
+With a CSS reset:
+
+The same <div> starts with no padding or margin.
+You add only the styles you want, so you know exactly how big the <div> will be and where it will be positioned.*/
+
+
+.clr{
+    clear: both;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(79, 169, 185, 0.514);
+    color: #fdfdfd;
+    padding: 8px 0;
+    /* width: 100%; */
+}
+/*Fixed Positioning:
+
+position: fixed; removes the header from the normal document flow and fixes it to the top of the viewport.
+top: 0; left: 0; right: 0; ensures the header spans the full width at the top.*/
+/* to ensure fixed postion and header spans full width you can do width 100% or top - right 0 left 0  using top right left is better */
+
+.container {
+    width: 69%; /* Adjust the width as needed */
+    margin: auto; /* This will center the container */
+    padding: 3px 12px; /* Optional: add some padding for better spacing */
+    font-weight: 400 ;
+
+    
+}
+.logo{
+    float: left;
+    padding:5px 0;
+    margin-right: 16px;
+    letter-spacing: 2px;
+    font-weight: 600 ;
+
+    /* margin-left: 200px; */
+}
+.nav{
+    float:right;
+    margin-top: 15px;
+    /* height: 52px; */
+
+}
+
+.nav ul li{
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+    
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fdfdfd;
+    padding: 8px;
+    margin: auto 0;
+    /* font-size: 16px; */
+}
+
+section{
+    padding: 50px 0  ;
+}
+
+/* Home Section */
+
+.home{
+    background-image: url('../img/1st-section.jpg');
+    background-size: cover;
+    background-position:center center ;
+    min-height: 140vh;
+    z-index: -1;
+    width: 100%;
+    color: #ffff;
+    /* padding-top: 100; */
+    line-height: 72px;
+    background-attachment: fixed;   
+    /* border: 5px black solid; */
+
+}
+
+.home h1{
+    /* width: 100px; */
+    font-weight: 800;
+    font-size: 60px;
+    /* margin: auto; */
+    /* border: 5px black solid; */
+    text-align: center;
+    letter-spacing: 15px;
+    /* border: 5px black solid; */
+
+
+}
+.home p{
+    margin-top: 1rem;
+    /* 1 rem  = 16 px*/
+    text-align: center;
+    /* border: 5px black solid; */
+
+}
+.home .main-text{
+    min-height: 100vh;
+    /* we gave min-hieght 100vh 3shan approach margin top ll form bta3et caledner 400px = fla7a 
+    fe 7alet desktop min-heght 100 vh kbeer fhtb2a 7elwa fe 7alet mobile 100vh ht23od ttwl container fe mobile l7ad ma ykml 100vh */
+    /* border: 5px black solid; */
+    padding-top: 289;
+
+}
+
+/* Calender Card */
+
+.calender-card{
+    width: 95vw;
+    /* e3trb width 95 vw deh shashet tablet maslana aw mobile so8yr f htb2a responsive w law kabrt 3shan 7aga zay lab fhtt8yr b shakl yonaseb shahet lab */
+    max-width: 1000px;
+    /*lama ts8r hts8r 7lw lama tkbr htkbr m3ya l7ad level mo3yn */
+    border: 1px black solid;
+    background: #ffff;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 48px;
+    color: black;
+}
+.first-row label{
+    line-height: 24px;
+
+}
+.first-row .item{
+    width: 33%;
+    float: left;
+    margin: auto;
+    
+    /* border: 1px black solid; */
+    /* padding-top: 0; */
+    /* padding: 6px 12px; */
+    /* margin-right: 12[x]; */
+    /* margin: auto; */
+}
+.item #destination{
+    width: 80%; margin-top: 19.2px;
+}
+@media only screen and (max-width: 600px) {
+    .first-row .item,
+    .item #destination{
+        width: 100%;
+        /* border: 3px red solid; */
+    }
+    .calender-card{
+        padding:10px
+    }
+    
+}
+
+input{
+    padding: 6px 12px;
+    border-radius: 3px;
+    /* background-color: #eeeeee; */
+    border: 1px solid #cccccc;
+    /* min-width: 280px; */
+}
+
+.second-row .item{
+    margin-top: 10px;
+    width: 23%;
+    float: left;
+    /* padding: 6px 12px; */
+    margin-right: 12px;
+    /* margin: auto; */
+}
+.second-row select{
+    padding: 6px 12px ; 
+    width: 100%;
+    max-width: 250px;
+    border-radius: 3px;
+    /* background-color: #eeeeee; */
+    border: 1px solid #cccccc;}
+@media only screen and (max-width: 600px) {
+    .second-row .item{
+        width: 100%;
+    }
+
+}
+
+.calender-card .btn{
+    /* width: 100px; */
+    margin: auto;
+    /* padding: 10px; */
+    margin-top: 8px;
+    text-align: center;
+}
+.calender-card button{
+    margin-top: 16px;
+    padding: 6px 12px;
+    background-color: #212529;
+    color: #fdfdfd;
+    border-radius: 4px;
+}
+/* End of Calender-Card */
+
+/* End of Home Section */
+
+/* 3shan tb2a responsvie ymkn astm3l media query msh 3aref ezay 
+aw a3ml 7agat fe styling zay width w max width deh  aw flex wrap lesa m3rfosh */
+
+
+/* About Section */
+
+
+.about h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+
+.lines-container{
+    width: fit-content;
+    /* border: 1px red solid; */
+    margin: auto;
+}
+
+.about-content {
+  margin: auto;
+  width: 70%;
+}
+.about-content .left {
+float: left;
+max-width: 450px;
+margin-top: 45px;
+}
+.about-content .left h3 {
+    line-height: 34px;
+    font-size: 28px;
+    font-weight: 700px;
+    margin-bottom: 10px;
+}
+.about-content .left p {
+    margin: 29px 0 16px 0 ;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 400px;
+}
+.about-content .right {
+float: right;
+width: 50%;
+margin-top: 20px;
+}
+
+/* End of About Section  */
+
+/* Explore Section */
+
+.explore{
+    background-image: linear-gradient(360deg, rgb(233, 233, 233), rgba(39, 167, 190, 0.651));
+}
+.explore h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+
+.explore-content {
+  margin: auto;
+  width: 70%;
+}
+.explore-content .left {
+float: left;
+max-width: 450px;
+margin-top: 45px;
+}
+.explore-content .left h3 {
+    line-height: 34px;
+    font-size: 28px;
+    font-weight: 700px;
+    margin-bottom: 10px;
+}
+.explore-content .left p {
+    margin: 29px 0 16px 0 ;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 400px;
+}
+.explore-content .right {
+    float: right;
+    width: 50%;
+    margin-top: 20px;
+}
+
+/* End of Explore Section  */
+
+/* Blog Section */
+.blog{
+    width: 70%;
+    margin: auto;
+
+}
+.blog h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+
+.blog .blog-card{
+    padding: 20px;
+    margin: 20px;
+    width: 28%;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+}
+.blog .blog-card img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.blog .blog-card h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+.blog .blog-card p{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.blog .blog-card a{
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 25px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+/* End of Blog Section  */
+
+
+
+/* Offers Section */
+.offer{
+    /* width: 80%; */
+    background-image: linear-gradient(360deg, rgb(233, 233, 233), rgba(39, 167, 190, 0.651));
+
+}
+.offer-container{
+    width: 70%;
+    margin: auto;
+
+
+}
+.offer h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+
+.offer .offer-card{
+    /* padding: 20px; */
+    margin: 20px;
+    width: 30%;
+    float: left;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+}
+
+.offer .offer-card .content{
+    padding: 0px 20 20 20;
+}
+
+.offer-card img{
+    width: 100%;
+    padding: 2px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.offer-card h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 8px;
+
+}
+
+.offer-card .stars{
+    color: #02faee;
+    margin-bottom: 8px;
+
+}
+.offer-card h4{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 8px;
+
+
+}
+.offer-card span{
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+.offer-card .btn{
+    /* width: 100px; */
+    /* margin: auto; */
+    /* padding: 10px; */
+    /* margin-top: 8px; */
+    /* text-align: center; */
+    /* margin: 10px 5px 10px 5px; */
+    width: 100px;
+}
+.offer-card button{
+    margin-top: 16px;
+    padding: 6px 12px;
+    background-color: #212529;
+    color: #fdfdfd;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+/* End of Offers Section  */
+
+.footer{
+    padding-top: 50px ;
+}
+.footer h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+
+.footer-content{
+    width: 70%;
+    margin: auto;
+    /* border: 1px red solid ; */
+}
+.footer-content .first-row .item{
+    width: 49%;
+    float: left;
+    margin-bottom: 10px;
+}
+.footer-content .first-row input[id="name"]{
+    margin-right: 26.6px;
+}
+
+
+.footer-content input,
+.footer-content textarea
+{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    border-radius: 3px;
+    /* background-color: #eeeeee; */
+    border: 1px solid #cccccc;
+
+
+}
+
+.footer-content button{
+    padding: 6px 12px;
+    background-color: #212529;
+    color: #fdfdfd;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer .copyright {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    margin-top:20 ;
+
+}
+
+.footer .copyright p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.footer .copyright a{
+    text-decoration: none;
+    color: #02faee;
+}
+.footer .copyright a:hover{
+    text-decoration: none;
+    color: rgb(10,88,202);
+}
+
+/*
+card{
+    width:100px;
+    height: 100px;
+}
+/*keda htfdl static 
+w na width bta3 ay 7aga msh 3ayz a5leh static
+law 3ayzo dynamic ha7ot width 95 vw for ex
+law width llmobile badrbo fe 95%
+tab law laptop shahet labtob kbera fa al fdl adehla max width */

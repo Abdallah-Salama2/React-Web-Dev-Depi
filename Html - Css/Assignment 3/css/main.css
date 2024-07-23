@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background-image: url('../images/sunset-1373171_1280.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.clr{
+    clear:both
+}
+
+h1{
+    float: left;
+    margin: 20px 0 0 50px;
+    color: white;
+}
+li{
+    list-style: none;
+
+}
+.navbar{
+    float: right;
+    margin: 30px 20px ;
+    color: white;
+}
+
+.welcome{
+    color:white;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 300px;
+}
+.roundedBtn{
+    width: 10%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid yellow;
+    background: transparent;
+    color: white;
+
+    
+}
+
+.container{
+    width: 600;
+    margin: 50 auto;
+    color: white;
+} 
+.card{
+    width: 300;
+    padding: 5px;
+    float: left;
+
+}
+
+
+
+
+.cardImg{
+    width: 100%;
+    border-radius: 50px;
+
+}
+
+.cardHeading{
+    display: inline-block;
+
+}
+
+.btn{
+    margin-top: 10px;
+    margin-left: 10px;
+    float: right;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid blue;
+    color: white;
+    width: 40%;
+    border-radius: 20px;
+
+}
+
+
+.price{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.primaryBtn{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid blue;
+    background: transparent;
+    /* margin: 10px; */
+}

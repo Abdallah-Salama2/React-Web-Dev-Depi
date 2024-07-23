@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css" />
+
+    </head>
+    <body>
+        <!---heading -->
+        <h1>Forms Assignment</h1>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br>
+            <label for="age">Age</label><br>
+            <input type="number" id="age" name="age"/> <br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+            <hr>
+            <label>Gender:</label><br>
+            <label for="male">Male:</label>
+            <input id="male" type="radio" name="Gender" value="male"/> 
+            <label for="female">Female:</label>
+            <input id="female" type="radio" name="Gender" value="female"/><br><br>
+            <label>Skills: </label>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="css" name="skills" value="css"><br><br>
+            <label>Language: </label>
+            <select>
+                <option value="EG" name="country">EGYPT</option>
+                <option value="FR" name="country">FRENCH</option>
+            </select>
+            <br><br>
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+            <br><br>
+            <hr>
+
+            <label for="datemin">Enter a date:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02">
+            <br><br>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+            <br><br>
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+              </video>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+
+        </form>
+    </body>
+</html>
