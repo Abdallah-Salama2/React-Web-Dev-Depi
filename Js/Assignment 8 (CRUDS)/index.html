@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="">
+    <div class="form-container bg-info py-5">
+      <div class="container">
+        <h1 class="text-center py-4">Products</h1>
+
+        <div class="content">
+          <label for="productName">Product Name :</label>
+          <input
+            type="text"
+            id="productName"
+            class="form-control mb-3"
+            oninput="regxTest(productName)"
+          />
+          <label for="productPrice">Product Price :</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input
+              id="productPrice"
+              type="text"
+              class="form-control"
+              aria-label="Amount (to the nearest dollar)"
+              oninput="regxTest(productPrice)"
+            />
+            <span class="input-group-text">.00</span>
+          </div>
+
+          <label for="productDesc">Product Description :</label>
+          <input
+            type="text"
+            id="productDesc"
+            class="form-control mb-3"
+            oninput="regxTest(productDesc)"
+          />
+
+          <label for="category">Product Category :</label>
+          <input
+            type="text"
+            id="category"
+            class="form-control mb-3"
+            oninput="regxTest(category)"
+          />
+
+          <button
+            class="btn btn-warning"
+            onclick="addProduct();"
+            id="addOrUpdateProduct"
+          >
+            Add Product
+          </button>
+          <button
+            class="btn btn-secondary"
+            onclick="clearProduct();"
+            id="clearProduct"
+          >
+            Reset
+          </button>
+        </div>
+
+        <input
+          type="text"
+          id="category"
+          class="form-control mt-3 w-25"
+          placeholder="Search"
+          oninput="searchProduct(this.value)"
+        />
+
+        <button
+          class="btn btn-danger float-end mb-2"
+          onclick="deleteAll();"
+          id="DeleteAll"
+        >
+          Delete All
+        </button>
+
+        <!-- Table -->
+        <div class="tableData py-3">
+          <table class="table table-striped text-center">
+            <thead>
+              <th>Index</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Category</th>
+              <th>Actions</th>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
