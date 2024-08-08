@@ -1,0 +1,21 @@
+.card {
+  height: 300px;
+}
+
+.card > img {
+  cursor: pointer;
+}
+
+.layout {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+.layout-img {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
+
+.icons i {
+  cursor: pointer;
+}
